@@ -20,11 +20,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const db = require("./app/models");
 const Role = db.role;
 
-db.sequelize.sync();
-// db.sequelize.sync({force: true}).then(() => {
-//   console.log('Drop and Resync Database with { force: true }');
-//   initial();
-// });
+// db.sequelize.sync();
+db.sequelize.sync({force: true}).then(() => { //only use in dev
+  console.log('Drop and Resync Database with { force: true }');
+  initial();
+});
 
 // simple route
 app.get("/", (req, res) => {
