@@ -4,7 +4,7 @@ npm install
 
 node server.js
 
-I've include the postman collection file in this repo:
+Postman collection file is inlcluded in this repo:
 WMS.postman_collection.json
 
 Backend app that exposes endpoints API for managing inventory with these nine (9) functionality:
